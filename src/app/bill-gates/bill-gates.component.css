@@ -1,0 +1,119 @@
+/* Подключим Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #1e1e1e; /* Темный фон */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #f4f4f4; /* Светлый текст */
+}
+
+.container {
+  background-color: #2b2b2b; /* Темно-серый фон карточки */
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Глубокая тень */
+  max-width: 800px;
+  padding: 40px;
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px); /* Легкое поднятие карточки */
+  background-color: #333333; /* Меняем фон при наведении */
+}
+
+/* Заголовки */
+h1, h2 {
+  color: #fff; /* Белые заголовки */
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 36px; /* Основной заголовок */
+  margin-top: 0;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 22px; /* Заголовки меньшего размера */
+  font-weight: 400;
+  color: #aaaaaa; /* Немного более светлый текст */
+}
+
+/* Основной текст */
+p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #dcdcdc; /* Светло-серый текст */
+  margin-bottom: 20px;
+}
+
+/* Изображение */
+.portrait {
+  width: 150px;
+  height: auto;
+  border-radius: 50%; /* Круглое изображение */
+  display: block;
+  margin: 0 auto 20px;
+  border: 3px solid #f39c12; /* Яркая рамка вокруг изображения */
+}
+
+/* Список цитат */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 18px;
+  margin-bottom: 15px;
+  background-color: #444444; /* Темный фон для цитат */
+  padding: 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+ul li:hover {
+  background-color: #555555; /* При наведении на цитаты */
+}
+
+/* Ссылки */
+a {
+  color: #f39c12; /* Яркий оранжевый цвет для ссылок */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #f1c40f; /* Изменение цвета при наведении */
+  text-decoration: underline;
+}
+
+/* Кнопка в стиле модерн */
+button {
+  background-color: #f39c12; /* Ярко-оранжевая кнопка */
+  border: none;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50px; /* Полукруглая форма кнопки */
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Тень у кнопки */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  margin: 20px 0;
+}
+
+button:hover {
+  background-color: #e67e22;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Глубокая тень при наведении */
+}
